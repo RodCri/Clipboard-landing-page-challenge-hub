@@ -83,7 +83,6 @@ a{
     color: var(--grayish-blue);
     line-height: 1.6em;
 }
-
 .services{
     width: 100%;
     height: 40em;
@@ -125,7 +124,7 @@ a{
     align-items: center;
 }
 .access__info{
-    width: 40em;
+    width: 100%;
     height: 10em;
 }
 .access__info-title{
@@ -135,6 +134,9 @@ a{
 }
 .access__info-text{
     color: var(--grayish-blue);
+}
+.access__figure img{
+    width: 100%;
 }
 .workflow__info{
     display: flex;
@@ -157,7 +159,7 @@ a{
     align-items: center;
 }
 .workflow__card{
-    width: 20em;
+    width: 100%;
     height: 14em;
     padding: 1em;
 }
@@ -180,9 +182,10 @@ a{
     justify-content: center;
     align-items: center;
     margin: 3em 0;
+    flex-wrap: wrap;
 }
 .companies__figure{
-    width: 14em;
+    width: 252px;
     height: 5em;    
     display: flex;
     justify-content: center;
@@ -202,13 +205,12 @@ a{
     padding-bottom: 1em;
 }
 .clipboard__text{
-    width: 40em;
+    width: 90%;
     color: var(--grayish-blue);
     margin-bottom: 4em;
 }
 .footer{
     width: 100%;
-    height: 8em;
     background-color: #f5f6f8;
     margin-top: 6em;
     display: flex;
@@ -217,6 +219,7 @@ a{
     align-items: center;
     color: var(--grayish-blue);
     padding: 0 8em;
+    flex-wrap: wrap;
 }
 .footer__logo{
     width: 3em;
@@ -249,4 +252,139 @@ a{
 .ico:hover{
     fill: var(--strong-cyan);
     cursor: pointer;
+}
+@media screen and (max-width: 930px){
+    .services__info{
+        padding: 0 2em;
+    }
+    .footer{
+        padding: 0 2em;
+    }
+}
+@media screen and (max-width:720px) {
+    body{
+        font-size: 16px;
+        overflow-x: hidden;
+    }
+    .hero{
+        padding: 0 2em;
+    }
+    .hero__cta{
+        display: flex;
+        flex-direction: column;
+    }
+    .blue{
+        margin: 1em 0;
+    }
+    .cta{
+        padding: 1em 4em;
+    }
+    .services{
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 6em;
+    }
+    .services__figure{
+        position: initial;
+        width: 70%;
+        margin-bottom: 4em;
+    }
+    .figure{
+        position: initial;
+    }
+    .services__info{
+        width: 80%;
+        text-align: center;
+    }
+    .access__figure img{
+        width: 80%;
+    }
+    .workflow__services{
+        flex-direction: column;
+    }
+    .clipboard__cta{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer{
+        flex-direction: column;
+        padding: 2em 0;
+    }
+    p{
+        margin: 0 4em;
+    }
+    .workflow__card{
+        width: 30em;
+    }
+}
+@media  (max-width:460px) {
+    body{
+        font-size: 14px;
+    }
+    p{
+        margin: 0 2em;
+    }
+    .hero{
+        height: 100%;
+        padding: 3em 2em;
+    }
+    .logo{
+        width: 80%;
+    }
+    .hero__title{
+        font-size: 1em;
+    }
+    .snippets{
+        height: 100%;
+        padding: 2em;
+    }
+    .services__info{
+        width: 90%;
+        padding: 0 1em;
+    }
+    .access__info{
+        height: 100%;
+        padding: 1em;
+    }
+    .access__figure{
+        padding: 1em;
+    }
+    .workflow__info{
+        padding: 1em;
+    }
+    .workflow__info-text{
+        text-align: center;
+    }
+    .workflow__info-title{
+        text-align: center;
+    }
+    .workflow__card{
+        width: 80%;
+    }
+    .companies__figure{
+        margin: 2em 0;
+    }
+    .clipboard{
+        height: 100%;
+        padding: 1em;
+    }
+    .footer__options{
+        flex-direction: column;
+        margin: 2em 0;
+    }
+    .footer__options-col{
+        margin: .4em 0;
+        align-items: center;
+    }
+    .clipboard__title{
+        text-align: center;
+    }
+}
+@media (max-width:370px) {
+    body{
+        font-size: 13px;
+    }
+    p{
+        margin: 0 1em;
+    }
 }
